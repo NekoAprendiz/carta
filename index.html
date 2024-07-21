@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+   <title>carta</title>
+</head>
+
+<body>
+     
+    <div id="cartas" class="cartas"> 
+          <div class="portada" id="portada">
+           
+           
+            <h1> Para Sarah</h1>
+            <div class="patitas" id="patitas">
+                <i id="patita" class='bx bxl-baidu' ></i>
+            </div>
+            <div class="corazones">
+            <div class="corazon1"></div>
+        </div>
+          </div>
+
+          <div class="hoja1" id ="hoja1">
+            <h2> Hola amor solo queria decirte lo mucho que me gustas
+                quiero estar contigo, despertar a tu lado todas las mañanas
+                no hay palabras suficientes para describir todo lo que siento por ti
+                eres el amor de mi vida y siempre estaré aquí para ti.
+
+            </h2>
+            <div class="conejo" id="conejo">
+                <img src="img/conejo0.png" alt="">
+            </div>
+
+              <div class="patitas1" id="patitas1">
+                <i id="patita1" class='bx bxl-baidu' ></i>
+            </div>   
+          </div>
+
+          <div class="hoja2" id="hoja2">
+            <h2> Desde que entraste en mi vida, todo ha cambiado para mejor 
+                Tu amor me ha llenado de felicidad y ha dado un nuevo sentido a mi existencia.
+                 Eres la dueña de mi corazón y mi razón para sonreír cada día.
+                
+            </h2>
+
+              <div class="conejo1" id="conejo1">
+             <img src="img/conejo0.png" alt="">
+              </div>
+              <div class="patitas2" id="patitas2">
+                <i id="patita2" class='bx bxl-baidu' ></i>
+            </div>   
+           </div>
+
+           <div class="hoja3" id="hoja3">
+              <h2> Cada momento a tu lado es mágico y especial
+                   Gracias por amarme y por ser la persona increíble que eres. </h2>
+
+
+            <div class="conejo2" id="conejo2">
+                <img src="img/conejo0.png" alt="">
+            </div>
+
+            <!--  ---------------------------   naruto       ----------------------------------     -->
+            <div class="konoja" id="konoja">
+                <img src="https://static.thenounproject.com/png/5257671-200.png" alt="">
+                <audio id="narutoAudio" src="soun/naruto.mp3"></audio>
+            </div>
+           
+           </div>
+        
+
+           
+    </div>
+    <div class="narutito" id="narutito">
+        <img src="img/naruto.png" alt="">
+        <audio id="jutsu" src="soun/jutsu.mp3"></audio>
+        <audio id="naruto_clones" src="soun/naruto_clones.mp3"></audio>
+        <audio id="sexy_jutsu" src="soun/sexy_jutsu.mp3"></audio>
+    </div>
+    <div class="sasuke" id="sasuke">
+        <img src="img/sasuke.png" alt="">
+        <audio id="amaterasu" src="soun/amaterasu.mp3"></audio>
+    </div>
+    <div class="sakura" id="sakura">
+        <img src="img/sakura.png" alt="">
+        <audio id="sakurashannaro" src="soun/sakurashannaro.mp3"></audio>
+    </div>
+
+    <script>
+        var sakura =document.getElementById('sakura');
+        var sakurashannaro = document.getElementById('sakurashannaro');
+      
+        sakura.addEventListener('click', () => {
+            sakurashannaro.play();
+            document.getElementById('cienimgE').style.display = 'block';
+            document.getElementById('cienimgS').style.display = 'block';
+            document.getElementById('cartas').style.display = 'block';
+            document.getElementById('circuloplay').style.display ='block';
+            document.getElementById('vplaylist').style.display= 'none';
+            document.getElementById('vplayer').style.display= 'none';
+
+            document.getElementById('imagen3E').style.display = 'block';
+            document.getElementById('imagen4E').style.display = 'block';
+            document.getElementById('imagen5E').style.display = 'block';
+            document.getElementById('imagen6E').style.display = 'block';
+            document.getElementById('imagen7E').style.display = 'block';
+            document.getElementById('imagen8E').style.display = 'block';
+            document.getElementById('imagen9E').style.display = 'block';
+            document.getElementById('imagen10E').style.display = 'block';
+            document.getElementById('imagen11E').style.display = 'block';
+
+            document.getElementById('imagen3S').style.display = 'block';
+            document.getElementById('imagen4S').style.display = 'block';
+            document.getElementById('imagen5S').style.display = 'block';
+            document.getElementById('imagen6S').style.display = 'block';
+            document.getElementById('imagen7S').style.display = 'block';
+            document.getElementById('imagen8S').style.display = 'block';
+            document.getElementById('imagen9S').style.display = 'block';
+            document.getElementById('imagen10S').style.display = 'block';
+            document.getElementById('imagen11S').style.display = 'block';
+
+            document.getElementById('musicas').style.display= 'block';
+
+            document.getElementById('container-carousel2').style.display ='none';
+            document.getElementById('container-carousel').style.display ='none';
+
+
+
+            
+        }); 
+         </script>
+
+    <script>
+        var sasuke =document.getElementById('sasuke');
+        var amaterasu = document.getElementById('amaterasu');
+        var cartas = document.getElementById('cartas')
+      
+        sasuke.addEventListener('click', () => {
+            amaterasu.play();
+
+            
+            
+            setTimeout(() => {
+            document.getElementById('cartas').style.display = 'none';
+            document.getElementById('vplayer').style.display= 'block';
+            document.getElementById('vplaylist').style.display= 'block';
+            }, 3000);
+
+            document.getElementById('imagen3E').style.display = 'none';
+            document.getElementById('imagen4E').style.display = 'none';
+            document.getElementById('imagen5E').style.display = 'none';
+            document.getElementById('imagen6E').style.display = 'none';
+            document.getElementById('imagen7E').style.display = 'none';
+            document.getElementById('imagen8E').style.display = 'none';
+            document.getElementById('imagen9E').style.display = 'none';
+            document.getElementById('imagen10E').style.display = 'none';
+            document.getElementById('imagen11E').style.display = 'none';
+            
+            document.getElementById('imagen3S').style.display = 'none';
+            document.getElementById('imagen4S').style.display = 'none';
+            document.getElementById('imagen5S').style.display = 'none';
+            document.getElementById('imagen6S').style.display = 'none';
+            document.getElementById('imagen7S').style.display = 'none';
+            document.getElementById('imagen8S').style.display = 'none';
+            document.getElementById('imagen9S').style.display = 'none';
+            document.getElementById('imagen10S').style.display = 'none';
+            document.getElementById('imagen11S').style.display = 'none';
+
+            document.getElementById('musicas').style.display= 'none';
+
+        }); 
+         </script>
+      
+
+   <script>
+  var narutito = document.getElementById('narutito');
+var jutsu = document.getElementById('jutsu');
+var cienimgE = document.getElementById('cienimgE');
+var cienimgS = document.getElementById('cienimgS');
+
+narutito.addEventListener('click', () => {
+  
+    document.getElementById('cienimgE').style.display = 'none';
+    document.getElementById('cienimgS').style.display = 'none';
+    document.getElementById('circuloplay').style.display ='none';
+    
+
+    setTimeout(() => {
+        document.getElementById('container-carousel2').style.display ='block';
+        document.getElementById('container-carousel').style.display ='block';
+        }, 3000);
+
+
+    jutsu.play();
+        setTimeout(() => {
+            naruto_clones.play();
+        }, 3000);
+
+        setTimeout(() =>{
+            sexy_jutsu.play();
+        },4000 )
+
+});
+
+   </script>
+
+    <script>
+    var konoja = document.getElementById('konoja');
+    var narutitoImg = document.querySelector('.narutito img');
+    var sasukeImg = document.querySelector('.sasuke img');
+    var sakuraImg = document.querySelector('.sakura img');
+
+    konoja.addEventListener('click', () => {
+        hoyme.pause();
+    narutoAudio.play();
+    document.getElementById('triangulo').style.display = 'block';
+    document.getElementById('pausa').style.display = 'none';
+    setTimeout(() => {
+        narutitoImg.style.display = 'block';
+    sasukeImg.style.display = 'block';
+    sakuraImg.style.display = 'block';
+        }, 4000);
+    
+   });
+
+</script>
+
+
+
+    <script>
+        var conejo2 = document.getElementById('conejo2');
+        var hoja2 = document.getElementById('hoja2');
+        var h2Elemento = document.getElementById('h2Elemento');
+        var patitas1 = document.getElementById('patitas1');
+
+        conejo2.addEventListener('click', () => {
+           
+            hoja2.style.transform = 'rotateY(0)'; 
+            hoja2.style.transition = 'transform 1s ease'; 
+             hoja2.style.zIndex=3;
+             h2Elemento1.style.display = 'block';
+            document.getElementById('conejo1').style.display = 'block';
+            document.getElementById('patitas2').style.display = 'block';
+
+        });
+    </script>
+
+    <script>
+        var patitas2 = document.getElementById('patitas2');
+        var hoja2 = document.getElementById('hoja2');
+        var h2Elemento1 = document.querySelector('#hoja2 h2');
+
+        patitas2.addEventListener('click', () => {
+            hoja2.style.transformOrigin = 'center left'; 
+            hoja2.style.transform = 'rotateY(180deg)'; 
+            hoja2.style.transition = 'transform 1s ease';
+            hoja2.style.zIndex= 5;
+            h2Elemento1.style.display = 'none';
+            document.getElementById('conejo1').style.display = 'none';
+            document.getElementById('patitas2').style.display = 'none'; 
+
+    
+        });
+    </script>
+
+    <script>
+        var conejo1 = document.getElementById('conejo1');
+    
+        conejo1.addEventListener('click', () => {
+           
+            hoja1.style.transform = 'rotateY(0)'; 
+            hoja1.style.transition = 'transform 1s ease'; 
+            hoja1.style.zIndex= 4;  
+             h2Elemento.style.display = 'block';
+            document.getElementById('conejo').style.display = 'block';
+            document.getElementById('patitas1').style.display = 'block';
+
+
+        });
+    </script>
+
+    <script>
+        var patitas1 = document.getElementById('patitas1');
+        var hoja1 = document.getElementById('hoja1');
+        var h2Elemento = document.querySelector('#hoja1 h2');
+        var conejo1 = document.querySelector('conejo1');
+
+        patitas1.addEventListener('click', () => {
+            hoja1.style.transformOrigin = 'center left'; 
+            hoja1.style.transform = 'rotateY(180deg)'; 
+            hoja1.style.transition = 'transform 1s ease';
+            hoja1.style.zIndex= 5; 
+            h2Elemento.style.display = 'none';
+            document.getElementById('conejo').style.display = 'none';
+            document.getElementById('patitas1').style.display = 'none';
+        
+    
+
+        });
+    </script>
+
+    <script>
+        var conejo = document.getElementById('conejo');
+
+        conejo.addEventListener('click', () => {
+           
+            portada.style.transform = 'rotateY(0)'; 
+            portada.style.transition = 'transform 1s ease'; 
+
+        });
+    </script>
+
+    <script>
+        var patitas = document.getElementById('patitas');
+        var portada = document.getElementById('portada');
+
+        patitas.addEventListener('click', () => {
+            portada.style.transformOrigin = 'center left'; 
+            portada.style.transform = 'rotateY(180deg)'; 
+            portada.style.transition = 'transform 1s ease'; 
+            
+
+    
+        });
+    </script>
+
+
+
+    <script>
+        document.addEventListener('mousemove', function(e){
+            let body = document.querySelector('body');
+            let heart = document.createElement('span');
+            let x = e.offsetX;
+            let y = e.offsetY;
+            heart.style.left = x+'px';    
+            heart.style.top = y+'px';
+        
+            let size = Math.random() * 80;
+            heart.style.width= 20+ size+'px';
+            heart.style.height= 20+size+'px';
+
+            let transformvalue = Math.random() * 360;
+            heart.style.transform = 'rotate('+ transformvalue +'deg)'
+            body.appendChild(heart);
+
+            setTimeout(function(){
+                heart.remove();
+            },1000)
+
+        })
+    </script>
+     
+    <script >
+        var pulse = function(){
+            var a = document.createElement("div");
+            a.setAttribute('class','circle'),
+            document.body.appendChild(a),
+            a.style.top = event.pageY +'px',
+            a.style.left = event.pageX +'px',
+
+            setTimeout(function(){
+                document.body.removeChild(a)
+            },1000)
+        };
+        document.addEventListener('click',pulse);
+
+    </script>
+
+
+<div id="cienimgE" class="cienimgE">
+    <div class="imagen1E">
+      <img src="cienfotos/E/edgar (1).jpeg" alt="">
+    </div>
+    <div class="imagen2E">
+        <img src="cienfotos/E/edgar (2).jpeg" alt="">
+    </div>
+    <div id="imagen3E" class="imagen3E">
+        <img src="cienfotos/E/edgar (3).jpeg" alt="">
+    </div>
+    <div id="imagen4E" class="imagen4E">
+        <img src="cienfotos/E/edgar (4).jpeg" alt="">
+    </div>
+    <div id="imagen5E" class="imagen5E">
+        <img src="cienfotos/E/edgar (5).jpeg" alt="">
+    </div>
+    <div id="imagen6E" class="imagen6E">
+       <img src="cienfotos/E/edgar (6).jpeg" alt="">
+    </div>
+    <div id="imagen7E" class="imagen7E">
+        <img src="cienfotos/E/edgar (7).jpeg" alt="">
+    </div>
+    <div id="imagen8E" class="imagen8E">
+        <img src="cienfotos/E/edgar (8).jpeg" alt="">
+    </div>
+    <div id="imagen9E" class="imagen9E">
+        <img src="cienfotos/E/edgar (9).jpeg" alt="">
+    </div>
+    <div id="imagen10E" class="imagen10E">
+        <img src="cienfotos/E/edgar (10).jpeg" alt="">
+    </div>
+    <div id="imagen11E" class="imagen11E">
+        <img src="cienfotos/E/edgar (11).jpeg" alt="">
+    </div>
+    <div class="imagen12E">
+        <img src="cienfotos/E/edgar (12).jpeg" alt="">
+    </div>
+    <div class="imagen13E">
+        <img src="cienfotos/E/edgar (13).jpeg" alt="">
+    </div>
+    <div class="imagen14E">
+        <img src="cienfotos/E/edgar (14).jpeg" alt="">
+    </div>
+    <div class="imagen15E">
+        <img src="cienfotos/E/edgar (15).jpeg" alt="">
+    </div>
+    <div class="imagen16E">
+        <img src="cienfotos/E/edgar (16).jpeg" alt="">
+    </div>
+    <div class="imagen17E">
+        <img src="cienfotos/E/edgar (17).jpeg" alt="">
+    </div>
+    <div class="imagen18E">
+        <img src="cienfotos/E/edgar (18).jpeg" alt="">
+    </div>
+    <div class="imagen19E">
+        <img src="cienfotos/E/edgar (19).jpeg" alt="">
+    </div>
+    <div class="imagen20E">
+        <img src="cienfotos/E/edgar (20).jpeg" alt="">
+    </div>
+    <div class="imagen21E">
+        <img src="cienfotos/E/edgar (21).jpeg" alt="">
+    </div>
+    <div class="imagen22E">
+        <img src="cienfotos/E/edgar (22).jpeg" alt="">
+    </div>
+    <div class="imagen23E">
+        <img src="cienfotos/E/edgar (23).jpeg" alt="">
+    </div>
+    <div class="imagen24E">
+        <img src="cienfotos/E/edgar (24).jpeg" alt="">
+    </div>
+    <div class="imagen25E">
+        <img src="cienfotos/E/edgar (25).jpeg" alt="">
+    </div>
+    <div></div>
+    <div></div>
+   
+
+   </div>
+
+<div id="cienimgS" class="cienimgS">
+    <div class="imagen1S">
+        <img src="cienfotos/S/sara (1).jpeg" alt="">
+    </div>
+    <div class="imagen2S">
+        <img src="cienfotos/S/sara (2).jpeg" alt="">
+    </div>
+    <div id="imagen3S" class="imagen3S">
+        <img src="cienfotos/S/sara (3).jpeg" alt="">
+    </div>
+    <div id="imagen4S" class="imagen4S">
+        <img src="cienfotos/S/sara (4).jpeg" alt="">
+    </div>
+    <div id="imagen5S" class="imagen5S">
+        <img src="cienfotos/S/sara (5).jpeg" alt="">
+    </div>
+    <div id="imagen6S" class="imagen6S">
+        <img src="cienfotos/S/sara (6).jpeg" alt="">
+    </div>
+    <div id="imagen7S" class="imagen7S">
+        <img src="cienfotos/S/sara (7).jpeg" alt="">
+    </div>
+    <div id="imagen8S" class="imagen8S">
+        <img src="cienfotos/S/sara (8).jpeg" alt="">
+    </div>
+    <div id="imagen9S" class="imagen9S">
+        <img src="cienfotos/S/sara (9).jpeg" alt="">
+    </div>
+    <div id="imagen10S" class="imagen10S">
+        <img src="cienfotos/S/sara (10).jpeg" alt="">
+    </div>
+    <div id="imagen11S" class="imagen11S">
+        <img src="cienfotos/S/sara (11).jpeg" alt="">
+    </div>
+    <div class="imagen12S">
+        <img src="cienfotos/S/sara (12).jpeg" alt="">
+    </div>
+    <div class="imagen13S">
+        <img src="cienfotos/S/sara (13).jpeg" alt="">
+    </div>
+    <div class="imagen14S">
+        <img src="cienfotos/S/sara (14).jpeg" alt="">
+    </div>
+    <div class="imagen15S">
+        <img src="cienfotos/S/sara (15).jpeg" alt="">
+    </div>
+    <div class="imagen16S">
+        <img src="cienfotos/S/sara (16).jpeg" alt="">
+    </div>
+    <div class="imagen17S">
+        <img src="cienfotos/S/sara (17).jpeg" alt="">
+    </div>
+    <div class="imagen18S">
+        <img src="cienfotos/S/sara (18).jpeg" alt="">
+    </div>
+    <div class="imagen19S">
+        <img src="cienfotos/S/sara (19).jpeg" alt="">
+    </div>
+    <div class="imagen20S">
+        <img src="cienfotos/S/sara (20).jpeg" alt="">
+    </div>
+    <div class="imagen21S">
+        <img src="cienfotos/S/sara (21).jpeg" alt="">
+    </div>
+  
+
+  
+</div>
+
+<div id="musicas" class="musicas">
+
+    <div id="circuloplay" class="circuloplay"> 
+        <div id="triangulo" class="triangulo">
+            <i id="triplay" class='bx bx-caret-right-circle'></i>
+              <audio id="hoyme" src="soun/hoy me levante.mp3"></audio>
+        </div>
+        <div id="pausa" class="pausa">
+            <i id="tripausa" class='bx bx-pause'></i>
+         </div>
+    </div>
+</div> 
+
+<script>
+    var triangulo = document.getElementById('triangulo');
+    var pausa = document.getElementById('pausa');
+
+    triangulo.addEventListener('click', () => {
+        document.getElementById('triangulo').style.display = 'none';
+        document.getElementById('pausa').style.display = 'block';
+        
+    });
+    pausa.addEventListener('click', () => {
+        document.getElementById('triangulo').style.display = 'block';
+        document.getElementById('pausa').style.display = 'none';
+        
+    });
+
+</script>
+
+<script>
+  
+    triangulo.addEventListener('click', () => {
+        hoyme.play();
+    }); 
+     </script>
+<script>
+  
+  pausa.addEventListener('click', () => {
+        hoyme.pause();
+    }); 
+     </script>
+
+
+
+<!--------------------------------------------------------------------------------------------------------->
+<div id="vplayer">
+    <video controls id="video" preload="auto" tabindex="0">
+      <source src="vdo/Naruto Opening 1.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <ul id="vplaylist">
+    <li class="active"><a href="vdo/Naruto Opening 1.mp4">Naruto Opening 1</a></li>
+    <li><a href="vdo/Naruto Opening 2 .mp4">Naruto Opening 2</a></li>
+    <li><a href="vdo/Naruto Opening 3.mp4">Naruto Opening 3</a></li>
+    <li><a href="vdo/Naruto Opening 4.mp4">Naruto Opening 4</a></li>
+    <li><a href="vdo/Naruto Opening 5.mp4">Naruto Opening 5</a></li>
+    <li><a href="vdo/Naruto Opening 6.mp4">Naruto Opening 5</a></li>
+    <li><a href="vdo/Naruto Opening 7 .mp4">Naruto Opening 5</a></li>
+    <li><a href="vdo/Naruto Opening 8.mp4">Naruto Opening 5</a></li>
+    <li><a href="vdo/Naruto Opening 9.mp4">Naruto Opening 5</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 1 _ Hero_s Come.mp4">Naruto Shippuden Opening 1</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 2 _ Distance.mp4">Naruto Shippuden Opening 2</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 3 _ Blue Bird.mp4">Naruto Shippuden Opening 3</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 5 _ Hotaru.mp4">Naruto Shippuden Opening 5</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 6 _ Sign.mp4">Naruto Shippuden Opening 6</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 7 _ Toumei.mp4">Naruto Shippuden Opening 7</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 8 _ Diver.mp4">Naruto Shippuden Opening 8</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 9 _ Lovers.mp4">Naruto Shippuden Opening 9</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 11 _ Totsugeki Rock.mp4">Naruto Shippuden Opening 11</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 12 _ Moshimo.mp4">Naruto Shippuden Opening 12</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 13 _ Niwaka Ame ni mo Makezu.mp4">Naruto Shippuden Opening 13</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 14 _ Tsuki no Ookisa.mp4">Naruto Shippuden Opening 14</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 15 _ Guren.mp4">Naruto Shippuden Opening 15</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 16 _ Silhouette.mp4">Naruto Shippuden Opening 16</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 17 _ Kaze .mp4">Naruto Shippuden Opening 17</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 18 _ LINE .mp4">Naruto Shippuden Opening 18</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 19 _ Blood Circulator.mp4">Naruto Shippuden Opening 19</a></li>
+    <li><a href="vdo/Naruto Shippuden Opening 20 _ Kara no Kokoro.mp4">Naruto Shippuden Opening 20</a></li>
+    
+  </ul>
+  
+  <script>
+    var video;
+    var vplaylist;
+    var vtracks;
+    var vcurrent;
+  
+    initvideo();
+  
+    function initvideo() {
+      vcurrent = 0;
+      video = document.getElementById('video');
+      vplaylist = document.getElementById('vplaylist');
+      vtracks = vplaylist.getElementsByTagName('a');
+      vlen = vtracks.length - 1;
+      video.volume = 1;
+  
+      for (var i = 0; i < vtracks.length; i++) {
+        vtracks[i].addEventListener('click', function (e) {
+          e.preventDefault();
+          var link = this;
+          vcurrent = Array.from(vtracks).indexOf(link);
+          runvideo(link, video);
+        });
+      }
+  
+      video.addEventListener('ended', function (e) {
+        vcurrent++;
+        if (vcurrent > vlen) {
+          vcurrent = 0;
+          link = vtracks[0];
+        } else {
+          link = vtracks[vcurrent];
+        }
+        runvideo(link, video);
+      });
+    }
+  
+    function runvideo(link, player) {
+      player.src = link.getAttribute('href');
+      var par = link.parentElement;
+      par.classList.add('active');
+      Array.from(par.parentElement.children).forEach(function (sibling) {
+        if (sibling !== par) {
+          sibling.classList.remove('active');
+        }
+      });
+      video.load();
+      video.play();
+    }
+  </script>
+  
+
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type=''>
+<script>
+//<![CDATA[
+var video;var vplaylist;var vtracks;var vcurrent;initvideo();function initvideo(){vcurrent=0;
+video=$('video');vplaylist=$('#vplaylist');vtracks=vplaylist.find('li a');
+vlen=vtracks.length-1;video[0].volume=1;vplaylist.find('a').click(function(e){e.preventDefault();
+link=$(this);vcurrent=link.parent().index();runvideo(link,video[0])});
+video[0].addEventListener('ended',function(e){vcurrent++;if(vcurrent>vlen){vcurrent=0;
+link=vplaylist.find('a')[0]}else{link=vplaylist.find('a')[vcurrent]}runvideo($(link),video[0])})}function runvideo(link,player){player.src=link.attr('href');
+par=link.parent();par.addClass('active').siblings().removeClass('active');video[0].load();video[0].play()}
+//]]>
+</script>
+
+
+<div id="container-carousel" class="container-carousel">
+        <div class="carruseles" id="slider">
+            <section class="slider-section">
+                <img src="calientes/E/edgar (1).jpeg">
+            </section>
+            <section class="slider-section">
+                <img src="calientes/E/edgar (2).jpeg">
+            </section>
+            <section class="slider-section">
+                <img src="calientes/E/edgar (3).jpeg">
+            </section>
+            <section class="slider-section">
+                <img src="calientes/E/edgar (4).jpeg">
+            </section>
+           
+           
+        </div>
+        <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+        <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+    </div>
+
+
+    <div id="container-carousel2" class="container-carousel2">
+        <div class="carruseles2" id="slider2">
+            <section class="slider-section2">
+                <img src="calientes/S/sarah (1).jpeg">
+            </section>
+            <section class="slider-section2">
+                <img src="calientes/S/sarah (2).jpeg">
+            </section>
+            <section class="slider-section2">
+                <img src="calientes/S/sarah (3).jpeg">
+            </section>
+            <section class="slider-section2">
+                <img src="calientes/S/sarah (4).jpeg">
+            </section>
+            
+           
+        </div>
+        <div class="btn-left2"><i class='bx bx-chevron-left'></i></div>
+        <div class="btn-right2"><i class='bx bx-chevron-right'></i></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
