@@ -1167,7 +1167,7 @@ z-index: 4;
   height:104px;
   width:600px;
   top: 450px;
-  left: 99%;
+  left: 405px;
   }
   #vplayer {
   position: absolute;
@@ -1230,23 +1230,91 @@ z-index: 4;
   color: #000; /* Color de la canción activa al pasar el cursor */
   }
   
-}
+   
 
+
+}
 
 /*--------------------------tablet----------------------------------------------------------*/
 
 
-@media (max-width: 767px) and (max-width:990px)
+@media (max-width:990px)
 {
-   .portada h1
-   {
-      position: absolute;
-      left: 90px;
-      top: 230px;
-      font-family: "Oleo Script", system-ui;
-     font-weight: 400;
-      font-size: 15dvb;
-   }
+
+
+   /*-----------------------------------video------------------------------------------------------------*/
+#vplaylist {
+   position: absolute;
+  padding: 20px;
+  margin: 0 auto;
+  display: none;
+  text-align: center;
+  height:104px;
+  width:600px;
+  top: 450px;
+  left: 408px;
+  }
+  #vplayer {
+  position: absolute;
+  padding: 10px 20px;
+  height:224px;
+  width:669px;
+  left: 389px;
+  display: none;
+
+  }
+  video {
+  width:599px; 
+  background: #f1f3f4;
+  margin:0 auto;
+  display: inline-block
+  }
+
+  #vplaylist {
+  margin: 0 auto 20px auto;
+  display: none;
+  background: #f20044; 
+  border-top: 1px solid #fff;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-weight: normal;
+  height: 125px; 
+  overflow: auto;
+  }
+  #vplaylist li, #vplaylist ul li {
+  background-image: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+  #vplaylist li a {
+  color: #ccc; /* Color de las canciones */
+  background:transparent; /* Fondo de las canciones */
+  padding: 7px 2px;
+  display: block;
+  padding-left: 10px;
+  text-decoration: none;
+  }
+  #vplaylist li a:hover{
+  background: #8c004b; /* Color de fondo al pasar el cursor */
+  text-decoration: none;
+  }
+  #vplaylist .active a {
+  color: #fff; /* Color de la canción activa */
+  font-style: Georgia;
+  text-decoration: none;
+  }
+  #vplaylist .active a:before {
+  content: "\25B6";
+  color: #fff; /* Color del icono Play */
+  font-style: normal;
+  padding-right: 8px;
+  }
+  #vplaylist .active a:hover {
+  color: #000; /* Color de la canción activa al pasar el cursor */
+  }
+  
+
 }
    
-
