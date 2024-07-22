@@ -1230,7 +1230,23 @@ z-index: 4;
   color: #000; /* Color de la canción activa al pasar el cursor */
   }
   
+}
+
+
+/*--------------------------tablet----------------------------------------------------------*/
+
+
+@media (max-width: 767px) and (max-width:990px)
+{
+   .portada h1
+   {
+      position: absolute;
+      left: 90px;
+      top: 230px;
+      font-family: "Oleo Script", system-ui;
+     font-weight: 400;
+      font-size: 15dvb;
+   }
+}
    
 
-
-}
